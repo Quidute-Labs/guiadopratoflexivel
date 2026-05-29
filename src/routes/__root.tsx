@@ -75,12 +75,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Guia do Prato Flexível — Comer melhor cabe na sua vida real" },
       { name: "description", content: "Aprenda a montar refeições equilibradas, práticas e possíveis para o dia a dia, sem dieta rígida nem culpa. R$ 97 à vista ou 12x de R$ 9,70." },
       { name: "author", content: "Calebe Clayton" },
-      { property: "og:title", content: "Guia do Prato Flexível" },
-      { property: "og:description", content: "Comer melhor sem transformar cada refeição em cobrança. Um guia prático para quem quer sair da confusão alimentar." },
+      { property: "og:title", content: "Guia do Prato Flexível — Comer melhor cabe na sua vida real" },
+      { property: "og:description", content: "Aprenda a montar refeições equilibradas, práticas e possíveis para o dia a dia, sem dieta rígida nem culpa. R$ 97 à vista ou 12x de R$ 9,70." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Guia do Prato Flexível" },
-      { name: "twitter:description", content: "Comer melhor cabe na sua vida real." },
+      { name: "twitter:title", content: "Guia do Prato Flexível — Comer melhor cabe na sua vida real" },
+      { name: "twitter:description", content: "Aprenda a montar refeições equilibradas, práticas e possíveis para o dia a dia, sem dieta rígida nem culpa. R$ 97 à vista ou 12x de R$ 9,70." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/35e1b124-bccb-4886-8dd0-b054e78fd040/id-preview-28139a98--d0ef0b8d-2065-4796-b781-f8e01460d39e.lovable.app-1780080598120.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/35e1b124-bccb-4886-8dd0-b054e78fd040/id-preview-28139a98--d0ef0b8d-2065-4796-b781-f8e01460d39e.lovable.app-1780080598120.png" },
     ],
     links: [
       {
