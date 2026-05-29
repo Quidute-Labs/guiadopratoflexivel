@@ -136,11 +136,11 @@
 
   .display {
     font-family: var(--font-display);
-    letter-spacing: -0.035em;
-    font-weight: 700;
-    line-height: 0.98;
+    letter-spacing: -0.015em;
+    font-weight: 400;
+    line-height: 1.05;
   }
-  .display-tight { letter-spacing: -0.045em; line-height: 0.92; font-weight: 800; }
+  .display-tight { letter-spacing: -0.02em; line-height: 1.0; font-weight: 400; }
 
   .grain {
     background-image:
