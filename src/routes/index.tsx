@@ -26,10 +26,6 @@ import bonus03 from "@/assets/gpf-bonus-3.png";
 import creator from "@/assets/gpf-creator.jpg";
 import garantiaImg from "@/assets/gpf-garantia.png";
 
-import a1 from "@/assets/avatar-1.jpg";
-import a2 from "@/assets/avatar-2.jpg";
-import a3 from "@/assets/avatar-3.jpg";
-import a4 from "@/assets/avatar-4.jpg";
 
 import foodBroccoli from "@/assets/food-broccoli.png";
 import foodTomato from "@/assets/food-tomato.png";
@@ -383,73 +379,7 @@ function Dor() {
   );
 }
 
-/* ---------- prova social ---------- */
-
-const proofs = [
-  {
-    name: "Mariana",
-    role: "23 anos",
-    avatar: a1,
-    text:
-      "Antes eu achava que precisava cortar tudo para comer melhor. Depois que entendi como montar meu prato, consegui fazer refeições mais equilibradas durante a semana e parei de sentir culpa quando comia um doce.",
-  },
-  {
-    name: "Lucas",
-    role: "27 anos",
-    avatar: a2,
-    text:
-      "Minha maior dificuldade era chegar cansado e não saber o que comer. Com as ideias práticas, comecei a organizar refeições simples e senti que minha alimentação saiu do improviso total.",
-  },
-  {
-    name: "Ana",
-    role: "21 anos",
-    avatar: a3,
-    text:
-      "Eu seguia muita gente na internet e ficava perdida. O guia me ajudou a entender o básico de um jeito simples, sem aquela sensação de que alimentação saudável é uma coisa impossível para quem trabalha o dia inteiro.",
-  },
-];
-
-function ProvaSocial() {
-  return (
-    <section className="section-dark hairline-t relative py-28 md:py-36">
-      <Container>
-        <div className="mx-auto max-w-[820px] text-center">
-          <h2 className="display text-[34px] md:text-[54px]">
-            Quando a alimentação deixa de ser confusa, a rotina muda.
-          </h2>
-        </div>
-
-        <div className="mt-16 grid gap-6 md:mt-20 md:grid-cols-3">
-          {proofs.map((p, i) => (
-            <article
-              key={p.name}
-              className="group relative flex flex-col rounded-3xl bg-surface-raised/70 p-7 ring-1 ring-hairline backdrop-blur-sm transition-all duration-500 hover:-translate-y-1"
-              style={{ transform: `rotate(${(i - 1) * 0.4}deg)` }}
-            >
-              <p className="text-[15px] leading-relaxed text-foreground/90">
-                “{p.text}”
-              </p>
-              <div className="mt-7 flex items-center gap-4">
-                <img
-                  src={p.avatar}
-                  alt={p.name}
-                  loading="lazy"
-                  width={48}
-                  height={48}
-                  className="size-12 rounded-full object-cover ring-1 ring-hairline"
-                />
-                <div>
-                  <div className="text-[15px] font-medium">{p.name}</div>
-                  <div className="text-[12.5px] text-muted-foreground">{p.role}</div>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
+/* ---------- CTA intermediário ---------- */
 
 /* ---------- CTA intermediário ---------- */
 
@@ -749,78 +679,7 @@ function Bonus() {
   );
 }
 
-/* ---------- depoimentos longos ---------- */
-
-const longTestimonials = [
-  {
-    name: "Mariana",
-    role: "23 anos",
-    image: a1,
-    text:
-      "Antes eu achava que comer melhor significava cortar pão, doce e tudo que eu gostava. Eu começava a semana tentando ser perfeita e desistia na quarta. Depois do guia, entendi como montar um prato mais equilibrado e parei de tratar uma refeição diferente como fracasso. Em 2 semanas consegui organizar melhor meus almoços e senti menos culpa no fim do dia.",
-  },
-  {
-    name: "Lucas",
-    role: "27 anos",
-    image: a2,
-    text:
-      "Minha rotina sempre foi corrida. Eu chegava em casa cansado, abria a geladeira e não sabia o que fazer. O guia me ajudou a entender combinações simples e a deixar alimentos mais fáceis à mão. Em 10 dias eu já tinha parado de depender tanto do improviso.",
-  },
-  {
-    name: "Ana",
-    role: "21 anos",
-    image: a3,
-    text:
-      "Eu seguia várias pessoas sobre alimentação e ficava cada vez mais confusa. O que mais me ajudou foi entender o básico sem pressão estética. Em 1 mês, comecei a comer melhor sem sentir que precisava copiar a rotina de ninguém.",
-  },
-  {
-    name: "Beatriz",
-    role: "25 anos",
-    image: a4,
-    text:
-      "Eu tinha muita culpa quando comia doce. Achava que aquilo anulava qualquer tentativa de comer melhor. Depois que entendi o conceito do prato flexível, ficou mais fácil incluir o que eu gosto sem perder o equilíbrio. Em 3 semanas minha relação com a comida ficou bem mais tranquila.",
-  },
-];
-
-function Depoimentos() {
-  return (
-    <section className="section-light hairline-t py-28 md:py-36">
-      <Container>
-        <div className="mx-auto max-w-[820px] text-center">
-          <h2 className="display text-[34px] md:text-[52px]">
-            Quando a comida deixa de ser uma cobrança diária.
-          </h2>
-        </div>
-
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
-          {longTestimonials.map((t) => (
-            <article
-              key={t.name}
-              className="rounded-3xl bg-surface-raised p-8 ring-1 ring-hairline shadow-float"
-            >
-              <p className="text-[15.5px] leading-relaxed text-foreground/90">
-                “{t.text}”
-              </p>
-              <div className="mt-6 flex items-center gap-3">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  width={44}
-                  height={44}
-                  className="size-11 rounded-full object-cover"
-                />
-                <div>
-                  <div className="text-[14px] font-medium">{t.name}</div>
-                  <div className="text-[12.5px] text-muted-foreground">{t.role}</div>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </section>
-  );
-}
+/* ---------- criador ---------- */
 
 /* ---------- criador ---------- */
 
@@ -1190,13 +1049,13 @@ function Landing() {
       <Hero />
       <AnatomiaPrato />
       <Dor />
-      <ProvaSocial />
+      
       <CTAMid />
       <Metodo />
       <ParaQuem />
       <Entregaveis />
       <Bonus />
-      <Depoimentos />
+      
       <Criador />
       <Suporte />
       <Garantia />
