@@ -615,7 +615,7 @@ function Bonus() {
       title: "15 receitas práticas para o dia a dia",
       desc: "Ideias simples para variar as refeições sem depender de preparos difíceis ou ingredientes fora da realidade.",
       v: "R$ 37",
-      img: bonus01,
+      img: bonus01.url,
     },
     {
       n: "02",
