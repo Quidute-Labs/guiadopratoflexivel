@@ -20,7 +20,7 @@ import logoMark from "@/assets/gpf-logo.png";
 import hero from "@/assets/gpf-hero.jpg";
 import bowlTop from "@/assets/gpf-bowl-top.png";
 import ebook from "@/assets/capa-ebook.png.asset.json";
-import bonus01 from "@/assets/gpf-bonus-1.png";
+import bonus01 from "@/assets/bonus-1-capa.png.asset.json";
 import bonus02 from "@/assets/gpf-bonus-2.png";
 import bonus03 from "@/assets/gpf-bonus-3.png";
 import creator from "@/assets/gpf-creator.jpg";
@@ -615,7 +615,7 @@ function Bonus() {
       title: "15 receitas práticas para o dia a dia",
       desc: "Ideias simples para variar as refeições sem depender de preparos difíceis ou ingredientes fora da realidade.",
       v: "R$ 37",
-      img: bonus01,
+      img: bonus01.url,
     },
     {
       n: "02",
