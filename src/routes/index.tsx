@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Aprenda a montar refeições equilibradas e possíveis no dia a dia, sem dieta rígida nem culpa. De R$ 97 por apenas R$ 37 à vista ou 4x de R$ 9,70.",
+          "Aprenda a montar refeições equilibradas e possíveis no dia a dia, sem dieta rígida nem culpa. R$ 37,90 à vista ou 4x de R$ 10,32 no cartão.",
       },
       { property: "og:title", content: "Guia do Prato Flexível" },
       {
@@ -247,7 +247,7 @@ function Hero() {
               7 dias de garantia incondicional
             </span>
             <span className="hidden h-3 w-px bg-hairline sm:block" />
-            <span>De R$ 97 por apenas R$ 37 à vista ou 4x de R$ 9,70</span>
+            <span>R$ 37,90 à vista ou 4x de R$ 10,32 no cartão</span>
           </div>
         </div>
       </Container>
@@ -886,14 +886,11 @@ function Oferta() {
 
               <div className="mt-10 grid items-end gap-8 md:grid-cols-2">
                 <div className="relative">
-                  <div className="text-[13px] text-[#1d1a14]/70 line-through">
-                    De R$ 97
-                  </div>
                   <div className="display text-[56px] leading-none md:text-[72px] text-[#1d1a14]">
-                    R$ 37
+                    R$ 37,90
                   </div>
                   <div className="mt-2 text-[13px] text-[#1d1a14]/70">
-                    à vista, ou 4× de R$ 9,70 no cartão
+                    à vista, ou 4× de R$ 10,32 no cartão
                   </div>
                 </div>
                 <div className="flex flex-col items-start gap-3 md:items-end">
@@ -1000,7 +997,7 @@ function FinalCTA() {
             Comer melhor cabe na sua vida real.
           </h2>
           <p className="mx-auto mt-7 max-w-[560px] text-[16px] text-muted-foreground md:text-[17px]">
-            De R$ 97 por apenas R$ 37 à vista ou 4× de R$ 9,70. Garantia incondicional de 7 dias.
+            R$ 37,90 à vista ou 4× de R$ 10,32 no cartão. Garantia incondicional de 7 dias.
             Acesso liberado em minutos.
           </p>
           <div className="mt-10 flex justify-center">
