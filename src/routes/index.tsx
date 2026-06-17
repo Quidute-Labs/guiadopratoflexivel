@@ -19,7 +19,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import logoMark from "@/assets/gpf-logo.png";
 import hero from "@/assets/gpf-hero.jpg";
 import bowlTop from "@/assets/gpf-bowl-top.png";
-import ebook from "@/assets/gpf-ebook.png";
+import ebook from "@/assets/capa-ebook.png.asset.json";
 import bonus01 from "@/assets/gpf-bonus-1.png";
 import bonus02 from "@/assets/gpf-bonus-2.png";
 import bonus03 from "@/assets/gpf-bonus-3.png";
@@ -564,7 +564,7 @@ function Entregaveis() {
               <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--ember)]/30" />
             </div>
             <img
-              src={ebook}
+              src={ebook.url}
               alt="Capa do Guia do Prato Flexível"
               width={928}
               height={1152}
