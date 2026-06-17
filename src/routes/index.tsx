@@ -564,7 +564,7 @@ function Entregaveis() {
               <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--ember)]/30" />
             </div>
             <img
-              src={ebook}
+              src={ebook.url}
               alt="Capa do Guia do Prato Flexível"
               width={928}
               height={1152}
