@@ -7,10 +7,8 @@ import {
   X,
   ShieldCheck,
   ChevronDown,
-  Heart,
   BookOpen,
   Clock,
-  Sparkles,
   Sprout,
   Coffee,
 } from "lucide-react";
