@@ -1003,8 +1003,7 @@ function FinalCTA() {
           </div>
           <p className="mt-8 text-[12.5px] text-muted-foreground">
             Compra segura pela plataforma. Ao finalizar, você terá acesso ao
-            material, aos bônus, aos vídeos explicativos e às orientações de
-            suporte.
+            material, aos bônus e às orientações de suporte.
           </p>
         </div>
       </Container>
