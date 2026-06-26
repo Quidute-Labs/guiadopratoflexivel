@@ -921,7 +921,7 @@ const faqs = [
   { q: "Eu tenho uma rotina muito corrida. Ainda assim consigo usar?", a: "Sim. O guia foi pensado justamente para jovens que trabalham, estudam, chegam cansados e não conseguem seguir uma rotina perfeita. Além do conteúdo principal, você recebe materiais de apoio para facilitar refeições simples em dias comuns." },
   { q: "Eu não sei quase nada sobre nutrição. Vou conseguir entender?", a: "Sim. O conteúdo foi escrito em linguagem simples e direta. A ideia é explicar conceitos básicos como carboidratos, proteínas, gorduras, fibras e saciedade de um jeito que você consiga aplicar na sua rotina." },
   { q: "O guia substitui uma consulta com nutricionista?", a: "Não. O guia não substitui acompanhamento profissional, diagnóstico, tratamento ou prescrição individualizada. Ele te ajuda a criar uma base de educação alimentar." },
-  { q: "Como recebo o material depois da compra?", a: "Após a compra, você terá acesso ao material pela plataforma. Dentro dela, estarão o e-book, os bônus, os vídeos explicativos e as orientações sobre como usar tudo." },
+  { q: "Como recebo o material depois da compra?", a: "Após a compra, você terá acesso ao material pela plataforma. Dentro dela, estarão o e-book, os bônus e as orientações sobre como usar tudo." },
   { q: "E se eu comprar e perceber que não é para mim?", a: "Você tem 7 dias de garantia incondicional. Dentro desse prazo, pode acessar o material com calma e, se entender que ele não faz sentido para você, solicitar o reembolso conforme as orientações da plataforma de pagamento." },
 ];
 
@@ -1003,8 +1003,7 @@ function FinalCTA() {
           </div>
           <p className="mt-8 text-[12.5px] text-muted-foreground">
             Compra segura pela plataforma. Ao finalizar, você terá acesso ao
-            material, aos bônus, aos vídeos explicativos e às orientações de
-            suporte.
+            material, aos bônus e às orientações de suporte.
           </p>
         </div>
       </Container>
