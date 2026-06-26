@@ -622,14 +622,14 @@ function Bonus() {
       title: "Guia “o que ter em casa”",
       desc: "Uma lista prática de alimentos coringas para facilitar refeições rápidas durante a semana.",
       v: "R$ 27",
-      img: bonus02,
+      img: bonus02.url,
     },
     {
       n: "03",
       title: "SOS rotina corrida",
       desc: "Refeições de emergência para dias em que você chegou cansado, não cozinhou ou não sabe o que preparar.",
       v: "R$ 27",
-      img: bonus03,
+      img: bonus03.url,
     },
   ];
 
