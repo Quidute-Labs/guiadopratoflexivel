@@ -21,8 +21,8 @@ import hero from "@/assets/gpf-hero.jpg";
 import bowlTop from "@/assets/gpf-bowl-top.png";
 import ebook from "@/assets/capa-ebook.png.asset.json";
 import bonus01 from "@/assets/bonus-1-capa.png.asset.json";
-import bonus02 from "@/assets/gpf-bonus-2.png";
-import bonus03 from "@/assets/gpf-bonus-3.png";
+import bonus02 from "@/assets/bonus-2-capa.png.asset.json";
+import bonus03 from "@/assets/bonus-3-capa.png.asset.json";
 import creator from "@/assets/gpf-creator.jpg";
 import garantiaImg from "@/assets/gpf-garantia.png";
 
