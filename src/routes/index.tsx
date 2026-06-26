@@ -7,10 +7,8 @@ import {
   X,
   ShieldCheck,
   ChevronDown,
-  Heart,
   BookOpen,
   Clock,
-  Sparkles,
   Sprout,
   Coffee,
 } from "lucide-react";
@@ -749,8 +747,6 @@ function Criador() {
 function Suporte() {
   const items = [
     { icon: BookOpen, title: "Material autoexplicativo", desc: "Leia, entenda e aplique no seu ritmo, sem depender de acompanhamento individual para começar." },
-    { icon: Sparkles, title: "Vídeos explicativos", desc: "Acompanhamento em vídeo mostrando como acessar o material e usar os conteúdos de apoio." },
-    { icon: Heart, title: "Suporte por WhatsApp", desc: "Atendimento para dúvidas de acesso, recebimento e uso dos materiais. Resposta em até 2 dias úteis." },
     { icon: Clock, title: "Acesso imediato", desc: "Tudo liberado dentro da plataforma logo após a confirmação do pagamento." },
     { icon: Sprout, title: "Linguagem direta", desc: "Conteúdo escrito em linguagem simples, para você aplicar mesmo sem saber nada de nutrição." },
     { icon: Coffee, title: "Para a vida real", desc: "Materiais pensados para quem trabalha, estuda, chega cansado e não vive uma rotina perfeita." },
@@ -765,7 +761,7 @@ function Suporte() {
           </h2>
           <p className="mx-auto mt-7 max-w-[620px] text-[16px] leading-relaxed text-muted-foreground">
             O Guia do Prato Flexível foi criado para ser simples, direto e
-            autoexplicativo — com apoio sempre que você precisar.
+            autoexplicativo — com conteúdo para você aplicar no seu ritmo.
           </p>
         </div>
 
