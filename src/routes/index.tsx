@@ -21,7 +21,7 @@ import ebook from "@/assets/capa-ebook.png.asset.json";
 import bonus01 from "@/assets/bonus-1-capa.png.asset.json";
 import bonus02 from "@/assets/bonus-2-capa.png.asset.json";
 import bonus03 from "@/assets/bonus-3-capa.png.asset.json";
-import creator from "@/assets/gpf-creator.jpg";
+import creator from "@/assets/calebe-clayton.jpg.asset.json";
 import garantiaImg from "@/assets/gpf-garantia.png";
 
 
@@ -689,7 +689,7 @@ function Criador() {
           <div className="md:col-span-5">
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src={creator}
+                src={creator.url}
                 alt="Calebe Clayton, estudante de Nutrição"
                 loading="lazy"
                 width={1024}
@@ -722,7 +722,7 @@ function Criador() {
                 tanta informação.
               </p>
               <p>
-                Desde pequeno, Calebe sempre gostou de cozinha, de experimentar
+                Desde pequeno, Calebe sempre gostou de cozinhar, de experimentar
                 alimentos diferentes e de preparar doces. Com o tempo,
                 percebeu que esse gosto pela comida não precisava ser tratado
                 como problema — era possível continuar comendo o que gostava
