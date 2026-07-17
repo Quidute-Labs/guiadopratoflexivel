@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun install *)",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"cd ~/projetos/guiadopratoflexivel && bun install 2>&1\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"which node; which npm; which npx; ls ~/.bun/bin/ 2>/dev/null; ls /usr/local/bin/bun 2>/dev/null; echo PATH=$PATH\")",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"source ~/.bashrc 2>/dev/null; source ~/.profile 2>/dev/null; which node; which npm; which bun; node --version; npm --version\" 2>&1)",
+      "PowerShell(bun --version 2>&1)",
+      "PowerShell(node --version 2>&1)",
+      "PowerShell(wsl -d Ubuntu -- bash -c \"curl -fsSL https://bun.sh/install | bash 2>&1\")"
+    ]
+  }
+}

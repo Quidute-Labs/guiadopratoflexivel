@@ -197,15 +197,12 @@ function Hero() {
           <p className="mb-5 font-mono text-[11.5px] uppercase tracking-[0.28em] text-[var(--fresh)]">
             Guia do Prato Flexível
           </p>
-          <h1 className="display display-tight text-balance text-[36px] sm:text-[48px] md:text-[64px]">
-            Comer melhor cabe na sua vida real.
+          <h1 className="display display-tight text-balance text-[36px] sm:text-[48px] md:text-[50px]">
+            Você não come mal por falta de vontade. Come mal porque ninguém te ensinou a montar o prato.
           </h1>
 
           <p className="mx-auto mt-7 max-w-[680px] text-pretty text-[16px] leading-relaxed text-muted-foreground md:text-[18px]">
-            Você não precisa copiar a rotina alimentar perfeita de quem vive
-            uma realidade completamente diferente da sua. Aprenda a montar
-            refeições equilibradas, práticas e possíveis para o dia a dia —
-            mantendo espaço para os alimentos que você gosta.
+            Aprenda um jeito simples de montar refeições equilibradas com o que já existe na sua rotina corrida — sem dieta, sem culpa e sem marmita de influenciador.
           </p>
 
           <ul className="mx-auto mt-10 grid max-w-[920px] gap-3 text-left sm:grid-cols-3">
@@ -237,16 +234,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="fade-up mt-12 flex flex-col items-center gap-6">
-          <PrimaryCTA>Quero comer melhor na vida real</PrimaryCTA>
-          <div className="flex items-center gap-6 text-[12.5px] text-muted-foreground">
-            <span className="inline-flex items-center gap-2">
-              <ShieldCheck className="size-3.5 text-[var(--fresh)]" />
-              7 dias de garantia incondicional
-            </span>
-            <span className="hidden h-3 w-px bg-hairline sm:block" />
-            <span>R$ 37,90 à vista ou 4x de R$ 10,32 no cartão</span>
-          </div>
+        <div className="fade-up mt-12 flex flex-col items-center gap-4">
+          <PrimaryCTA>Começar a comer melhor hoje</PrimaryCTA>
+          <p className="text-[12.5px] text-muted-foreground">
+            Acesso imediato · 7 dias de garantia · a partir de R$ 10,32
+          </p>
         </div>
       </Container>
     </section>
@@ -395,8 +387,11 @@ function CTAMid() {
             deixa de parecer um projeto distante e começa a caber na rotina
             que você já tem.
           </p>
-          <div className="mt-10 flex justify-center">
-            <PrimaryCTA>Quero montar meu prato com mais leveza</PrimaryCTA>
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <PrimaryCTA>Sair da culpa e comer com leveza</PrimaryCTA>
+            <p className="text-[12.5px] text-muted-foreground">
+              Acesso imediato · 7 dias de garantia · a partir de R$ 10,32
+            </p>
           </div>
         </div>
       </Container>
@@ -896,11 +891,11 @@ function Oferta() {
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-3 rounded-full bg-[oklch(0.40_0.06_145)] px-7 py-4 text-[15px] font-semibold text-[#fbf5e6] transition-all duration-300 hover:-translate-y-[1px] hover:shadow-[0_18px_44px_-14px_rgba(0,0,0,0.45)]"
                   >
-                    <span>Quero acessar o Guia</span>
+                    <span>QUERO o Guia + os 3 bônus</span>
                     <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                   </a>
                   <div className="text-right text-[12.5px] text-[#1d1a14]/70">
-                    7 dias de garantia incondicional
+                    ✅ Acesso imediato · 🔒 Compra segura · 🛡️ 7 dias de garantia incondicional
                   </div>
                 </div>
               </div>
@@ -950,15 +945,13 @@ function FAQ() {
                     >
                       <span className="text-[16.5px] font-medium md:text-[18px]">{f.q}</span>
                       <ChevronDown
-                        className={`mt-1 size-5 shrink-0 text-muted-foreground transition-transform duration-300 ${
-                          active ? "rotate-180 text-[var(--fresh)]" : ""
-                        }`}
+                        className={`mt-1 size-5 shrink-0 text-muted-foreground transition-transform duration-300 ${active ? "rotate-180 text-[var(--fresh)]" : ""
+                          }`}
                       />
                     </button>
                     <div
-                      className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-500 ${
-                        active ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                      }`}
+                      className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-500 ${active ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                        }`}
                     >
                       <div className="min-h-0">
                         <p className="pb-7 pr-10 text-[15.5px] leading-relaxed text-muted-foreground">
@@ -998,8 +991,11 @@ function FinalCTA() {
             R$ 37,90 à vista ou 4× de R$ 10,32 no cartão. Garantia incondicional de 7 dias.
             Acesso liberado em minutos.
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-col items-center gap-4">
             <PrimaryCTA>Quero acessar o Guia do Prato Flexível</PrimaryCTA>
+            <p className="text-[12.5px] text-muted-foreground">
+              Acesso imediato · 7 dias de garantia · a partir de R$ 10,32
+            </p>
           </div>
           <p className="mt-8 text-[12.5px] text-muted-foreground">
             Compra segura pela plataforma. Ao finalizar, você terá acesso ao
@@ -1046,13 +1042,13 @@ function Landing() {
       <Hero />
       <AnatomiaPrato />
       <Dor />
-      
+
       <CTAMid />
       <Metodo />
       <ParaQuem />
       <Entregaveis />
       <Bonus />
-      
+
       <Criador />
       <Suporte />
       <Garantia />
