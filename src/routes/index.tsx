@@ -17,11 +17,11 @@ import { motion, useScroll, useTransform } from "motion/react";
 import logoMark from "@/assets/gpf-logo.png";
 import hero from "@/assets/gpf-hero.jpg";
 import bowlTop from "@/assets/gpf-bowl-top.png";
-import ebook from "@/assets/capa-ebook.png.asset.json";
-import bonus01 from "@/assets/bonus-1-capa.png.asset.json";
-import bonus02 from "@/assets/bonus-2-capa.png.asset.json";
-import bonus03 from "@/assets/bonus-3-capa.png.asset.json";
-import creator from "@/assets/calebe-clayton.jpg.asset.json";
+import ebook from "@/assets/capa-ebook.png";
+import bonus01 from "@/assets/bonus-1-capa.png";
+import bonus02 from "@/assets/bonus-2-capa.png";
+import bonus03 from "@/assets/bonus-3-capa.png";
+import creator from "@/assets/calebe-clayton.jpg";
 import garantiaImg from "@/assets/gpf-garantia.png";
 
 
