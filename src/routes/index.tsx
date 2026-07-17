@@ -17,11 +17,11 @@ import { motion, useScroll, useTransform } from "motion/react";
 import logoMark from "@/assets/gpf-logo.png";
 import hero from "@/assets/gpf-hero.jpg";
 import bowlTop from "@/assets/gpf-bowl-top.png";
-import ebook from "@/assets/capa-ebook.png.asset.json";
-import bonus01 from "@/assets/bonus-1-capa.png.asset.json";
-import bonus02 from "@/assets/bonus-2-capa.png.asset.json";
-import bonus03 from "@/assets/bonus-3-capa.png.asset.json";
-import creator from "@/assets/calebe-clayton.jpg.asset.json";
+import ebook from "@/assets/capa-ebook.png";
+import bonus01 from "@/assets/bonus-1-capa.png";
+import bonus02 from "@/assets/bonus-2-capa.png";
+import bonus03 from "@/assets/bonus-3-capa.png";
+import creator from "@/assets/calebe-clayton.jpg";
 import garantiaImg from "@/assets/gpf-garantia.png";
 
 
@@ -562,7 +562,7 @@ function Entregaveis() {
               <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--ember)]/30" />
             </div>
             <img
-              src={ebook.url}
+              src={ebook}
               alt="Capa do Guia do Prato Flexível"
               width={928}
               height={1152}
@@ -613,21 +613,21 @@ function Bonus() {
       title: "15 receitas práticas para o dia a dia",
       desc: "Ideias simples para variar as refeições sem depender de preparos difíceis ou ingredientes fora da realidade.",
       v: "R$ 37",
-      img: bonus01.url,
+      img: bonus01,
     },
     {
       n: "02",
       title: "Guia “o que ter em casa”",
       desc: "Uma lista prática de alimentos coringas para facilitar refeições rápidas durante a semana.",
       v: "R$ 27",
-      img: bonus02.url,
+      img: bonus02,
     },
     {
       n: "03",
       title: "SOS rotina corrida",
       desc: "Refeições de emergência para dias em que você chegou cansado, não cozinhou ou não sabe o que preparar.",
       v: "R$ 27",
-      img: bonus03.url,
+      img: bonus03,
     },
   ];
 
@@ -689,7 +689,7 @@ function Criador() {
           <div className="md:col-span-5">
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src={creator.url}
+                src={creator}
                 alt="Calebe Clayton, estudante de Nutrição"
                 loading="lazy"
                 width={1024}
