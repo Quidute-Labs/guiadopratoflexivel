@@ -819,6 +819,11 @@ function Oferta() {
     ["Bônus 2 — Guia “o que ter em casa”", "R$ 27"],
     ["Bônus 3 — SOS rotina corrida", "R$ 27"],
   ];
+  const trustBadges = [
+    "✅ Acesso imediato",
+    "🔒 Compra segura",
+    "🛡️ 7 dias de garantia incondicional",
+  ];
   return (
     <section id="oferta" className="section-dark hairline-t relative overflow-hidden py-28 md:py-36">
       <div
@@ -829,12 +834,19 @@ function Oferta() {
         }}
       />
       <Container>
+        {/* tarja de lançamento */}
+        <div className="mx-auto mb-10 max-w-[600px] px-4 md:mb-14">
+          <div className="rounded-2xl bg-[var(--ember)]/15 px-5 py-3 text-center text-[13px] font-medium leading-snug text-[var(--ember)] ring-1 ring-[var(--ember)]/30 md:text-[14px]">
+            🌱 Oferta de lançamento · Guia + 3 bônus por R$ 37,90 · o preço sobe em breve
+          </div>
+        </div>
+
         <div className="mx-auto max-w-[760px] text-center">
           <h2 className="display text-[36px] md:text-[56px]">
             Comece pelo prato que cabe na sua rotina.
           </h2>
           <p className="mx-auto mt-5 max-w-[560px] text-[15.5px] text-muted-foreground md:text-[16.5px]">
-            Você leva o guia principal e os três apoios para aplicar na vida real.
+            Você leva o guia principal e os três apoios pra aplicar na vida real — hoje, do jeito que sua semana é.
           </p>
         </div>
 
@@ -848,6 +860,14 @@ function Oferta() {
             }}
           >
             <div className="relative px-7 pb-10 pt-9 md:px-16 md:pb-14 md:pt-12">
+              {/* selo acesso imediato */}
+              <div className="mb-7 flex justify-center">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-[oklch(0.40_0.06_145)]/10 px-3.5 py-1.5 font-mono text-[10.5px] font-semibold uppercase tracking-[0.16em] text-[oklch(0.40_0.06_145)] ring-1 ring-[oklch(0.40_0.06_145)]/25">
+                  <Check className="size-3" />
+                  Acesso imediato
+                </span>
+              </div>
+
               <ul className="space-y-[12px]">
                 {stack.map(([t, v]) => (
                   <li
@@ -863,7 +883,7 @@ function Oferta() {
                       </svg>
                     </span>
                     <span className="font-medium text-[#1d1a14]/85">{t}</span>
-                    <span className="font-mono text-[13px] tabular-nums text-[#1d1a14]/75">
+                    <span className="font-mono text-[13px] tabular-nums text-[#1d1a14]/50 line-through">
                       {v}
                     </span>
                   </li>
@@ -877,14 +897,23 @@ function Oferta() {
 
               <div className="mt-10 grid items-end gap-8 md:grid-cols-2">
                 <div className="relative">
-                  <div className="display text-[56px] leading-none md:text-[72px] text-[#1d1a14]">
-                    R$ 37,90
+                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#1d1a14]/55">
+                    Hoje, na oferta de lançamento:
+                  </div>
+                  <div className="display mt-2 text-[48px] leading-none md:text-[72px] text-[#1d1a14]">
+                    R$ 37,90{" "}
+                    <span className="font-sans text-[16px] font-normal text-[#1d1a14]/70 md:text-[20px]">
+                      à vista
+                    </span>
                   </div>
                   <div className="mt-2 text-[13px] text-[#1d1a14]/70">
-                    à vista, ou 4× de R$ 10,32 no cartão
+                    ou 4× de R$ 10,32 no cartão
+                  </div>
+                  <div className="mt-4 max-w-[320px] text-[12px] leading-relaxed text-[#1d1a14]/60">
+                    Esse é o preço da fase de lançamento. Conforme o guia recebe atualizações e novos bônus, o valor sobe — e quem entra agora garante a condição de hoje.
                   </div>
                 </div>
-                <div className="flex flex-col items-start gap-3 md:items-end">
+                <div className="flex flex-col items-start gap-4 md:items-end">
                   <a
                     href="https://pay.hotmart.com/O106374795V"
                     target="_blank"
@@ -894,13 +923,33 @@ function Oferta() {
                     <span>QUERO o Guia + os 3 bônus</span>
                     <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" />
                   </a>
-                  <div className="text-right text-[12.5px] text-[#1d1a14]/70">
-                    ✅ Acesso imediato · 🔒 Compra segura · 🛡️ 7 dias de garantia incondicional
+                  <div className="flex flex-wrap items-center gap-2 md:justify-end">
+                    {trustBadges.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full bg-[#1d1a14]/5 px-3 py-1.5 text-[11.5px] font-medium text-[#1d1a14]/70 ring-1 ring-[#1d1a14]/10"
+                      >
+                        {t}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
+
+              {/* risco zero */}
+              <div className="mt-9 border-t border-dashed border-[#1d1a14]/20 pt-5 text-center text-[12.5px] leading-relaxed text-[#1d1a14]/60">
+                Você tem 7 dias pra ler tudo com calma. Se sentir que não é pra você, é só pedir o reembolso — sem burocracia e sem precisar justificar.
+              </div>
             </div>
           </div>
+        </div>
+
+        {/* faixa de autoridade */}
+        <div className="mx-auto mt-8 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-10">
+          <span aria-hidden>📗</span>
+          <span>
+            Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
+          </span>
         </div>
       </Container>
     </section>
