@@ -221,10 +221,11 @@ function Hero() {
             ))}
           </ul>
 
-          <div className="mx-auto mt-6 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-8">
+          {/* faixa de autoridade */}
+          <div className="mx-auto mt-8 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-10">
             <span aria-hidden>📗</span>
             <span>
-              Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
+              Baseado no Guia Alimentar Brasileiro (Ministério da Saúde)
             </span>
           </div>
         </div>
@@ -599,6 +600,13 @@ function Entregaveis() {
                 </li>
               ))}
             </ul>
+            {/* faixa de autoridade */}
+            <div className="mx-auto mt-8 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-10">
+              <span aria-hidden>📗</span>
+              <span>
+                Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
+              </span>
+            </div>
           </div>
         </div>
       </Container>
@@ -840,7 +848,7 @@ function Oferta() {
             "radial-gradient(ellipse at 50% 0%, oklch(0.72 0.12 55 / 0.35), transparent 60%)",
         }}
       />
-      <Container>
+      <Container>        
         {/* tarja de lançamento */}
         <div className="mx-auto mb-10 max-w-[600px] px-4 md:mb-14">
           <div className="rounded-2xl bg-[var(--ember)]/15 px-5 py-3 text-center text-[13px] font-medium leading-snug text-[var(--ember)] ring-1 ring-[var(--ember)]/30 md:text-[14px]">
@@ -949,15 +957,15 @@ function Oferta() {
               </div>
             </div>
           </div>
+          {/* faixa de autoridade */}
+          <div className="mx-auto mt-8 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-10">
+              <span aria-hidden>📗</span>
+              <span>
+                Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
+              </span>
+            </div>
         </div>
 
-        {/* faixa de autoridade */}
-        <div className="mx-auto mt-8 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-10">
-          <span aria-hidden>📗</span>
-          <span>
-            Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
-          </span>
-        </div>
       </Container>
     </section>
   );
