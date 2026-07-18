@@ -220,6 +220,13 @@ function Hero() {
               </li>
             ))}
           </ul>
+
+          <div className="mx-auto mt-6 flex max-w-[620px] items-start justify-center gap-2 px-4 text-center text-[12px] leading-relaxed text-muted-foreground/80 md:mt-8">
+            <span aria-hidden>📗</span>
+            <span>
+              Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
+            </span>
+          </div>
         </div>
 
         <div className="fade-up mt-14 md:mt-20">
