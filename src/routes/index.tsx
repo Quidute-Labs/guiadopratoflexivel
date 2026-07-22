@@ -198,24 +198,24 @@ function Hero() {
             Guia do Prato Flexível
           </p>
           <h1 className="display display-tight text-balance text-[36px] sm:text-[48px] md:text-[50px]">
-            Você não come mal por falta de vontade. Come mal porque ninguém te ensinou a montar o prato.
+            Pare de viver entre a culpa e as dietas. Descubra um jeito de comer bem que realmente cabe na sua rotina.
           </h1>
 
           <p className="mx-auto mt-7 max-w-[680px] text-pretty text-[16px] leading-relaxed text-muted-foreground md:text-[18px]">
-            Aprenda um jeito simples de montar refeições equilibradas com o que já existe na sua rotina corrida — sem dieta, sem culpa e sem marmita de influenciador.
+            Um guia prático para quem quer melhorar a alimentação sem cortar tudo o que gosta, sem regras impossíveis e sem recomeçar toda segunda-feira.
           </p>
 
-          <ul className="mx-auto mt-10 grid max-w-[920px] gap-3 text-left sm:grid-cols-3">
+          <ul className="mx-auto mt-10 grid max-w-[920px] gap-3 sm:grid-cols-3">
             {[
-              "Pare de travar na hora de montar o prato e tenha um caminho simples para organizar suas refeições.",
-              "Saia da culpa depois de comer algo diferente e entenda como equilíbrio funciona na prática.",
-              "Transforme uma alimentação “mais ou menos” em escolhas melhores, mesmo em semanas corridas.",
+              "Pare de recomeçar sua alimentação toda segunda-feira.",
+              "Volte a comer sem sentir culpa depois de cada refeição.",
+              "Descubra um jeito de comer melhor que realmente cabe na sua rotina.",
             ].map((t) => (
               <li
                 key={t}
-                className="flex items-start gap-3 rounded-2xl bg-surface-raised/80 px-4 py-3 text-[13.5px] leading-snug text-foreground/85 shadow-float backdrop-blur-sm"
+                className="flex h-full items-center gap-3 rounded-2xl bg-surface-raised/80 px-4 py-3 text-left text-[13.5px] leading-snug text-foreground/85 shadow-float backdrop-blur-sm"
               >
-                <Check className="mt-0.5 size-4 shrink-0 text-[var(--fresh)]" strokeWidth={2.25} />
+                <Check className="size-4 shrink-0 text-[var(--fresh)]" strokeWidth={2.25} />
                 <span>{t}</span>
               </li>
             ))}
@@ -243,9 +243,11 @@ function Hero() {
         </div>
 
         <div className="fade-up mt-12 flex flex-col items-center gap-4">
-          <PrimaryCTA>Começar a comer melhor hoje</PrimaryCTA>
-          <p className="text-[12.5px] text-muted-foreground">
-            Acesso imediato · 7 dias de garantia · a partir de R$ 10,32
+          <PrimaryCTA>Quero comer sem culpa</PrimaryCTA>
+          <p className="text-center text-[12.5px] text-muted-foreground">
+            Acesso imediato • Garantia de 7 dias
+            <br />
+            Menos que um delivery para transformar sua relação com a comida.
           </p>
         </div>
       </Container>
@@ -280,7 +282,7 @@ function AnatomiaPrato() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-[760px] text-center">
           <h2 className="display display-tight text-balance text-[36px] md:text-[56px]">
-            Um prato equilibrado não precisa ser um prato perfeito.
+            Comer melhor não significa viver de dieta. Significa fazer boas escolhas na maior parte do tempo.
           </h2>
           <p className="mx-auto mt-5 max-w-[600px] text-[16px] leading-relaxed text-muted-foreground md:text-[17px]">
             O Prato Flexível é uma forma simples de olhar para a refeição e
@@ -429,12 +431,11 @@ function Metodo() {
             O método
           </p>
           <h2 className="display text-[34px] md:text-[54px]">
-            O prato fica mais simples quando você entende a lógica.
+            Depois que você aprende esse método, montar refeições equilibradas deixa de ser uma dúvida
           </h2>
           <p className="mt-6 text-[16px] leading-relaxed text-muted-foreground">
-            Em vez de decorar regras rígidas, você aprende a montar combinações
-            que fazem sentido para o seu dia. Uma sequência de 8 passos para
-            sair da confusão alimentar.
+          Você não vai depender de cardápios prontos nem de dietas engessadas. 
+          Vai entender um método simples, de 8 passos, para saber o que colocar no prato em qualquer situação.
           </p>
         </div>
 
@@ -484,7 +485,7 @@ function ParaQuem() {
     <section className="section-light hairline-t py-28 md:py-36">
       <Container>
         <h2 className="display mx-auto max-w-[820px] text-center text-[34px] md:text-[52px]">
-          Este guia é para quem quer comer melhor sem transformar comida em cobrança.
+          O Prato Flexível é para quem quer comer melhor sem transformar comida em cobrança.
         </h2>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
@@ -555,7 +556,7 @@ function Entregaveis() {
             O que você recebe
           </p>
           <h2 className="display text-[34px] text-white md:text-[54px]">
-            Um material prático para começar a comer melhor com mais clareza.
+            Tudo o que você precisa para nunca mais ficar na dúvida sobre o que comer na sua rotina.
           </h2>
         </div>
 
