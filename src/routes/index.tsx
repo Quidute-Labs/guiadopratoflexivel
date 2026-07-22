@@ -621,6 +621,7 @@ function Bonus() {
   const bonuses = [
     {
       n: "01",
+      eyebrow: "Sem ideia do que cozinhar?",
       title: "15 receitas práticas para o dia a dia",
       desc: "Ideias simples para variar as refeições sem depender de preparos difíceis ou ingredientes fora da realidade.",
       v: "R$ 37",
@@ -628,6 +629,7 @@ function Bonus() {
     },
     {
       n: "02",
+      eyebrow: "Tem dificuldade em montar a lista de compras?",
       title: "Guia “o que ter em casa”",
       desc: "Uma lista prática de alimentos coringas para facilitar refeições rápidas durante a semana.",
       v: "R$ 27",
@@ -635,6 +637,7 @@ function Bonus() {
     },
     {
       n: "03",
+      eyebrow: "Não preparou a comida? Não peça delivery",
       title: "SOS rotina corrida",
       desc: "Refeições de emergência para dias em que você chegou cansado, não cozinhou ou não sabe o que preparar.",
       v: "R$ 27",
@@ -672,7 +675,10 @@ function Bonus() {
                 <div className="font-mono text-[11px] tracking-[0.22em] text-[var(--ember)]">
                   BÔNUS {b.n}
                 </div>
-                <h3 className="display mt-5 text-[22px] leading-tight">{b.title}</h3>
+                <p className="mt-5 text-[16px] italic leading-snug text-muted-foreground">
+                  {b.eyebrow}
+                </p>
+                <h3 className="display mt-2 text-[22px] leading-tight">{b.title}</h3>
                 <p className="mt-4 flex-1 text-[14.5px] leading-relaxed text-muted-foreground">
                   {b.desc}
                 </p>
