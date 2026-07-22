@@ -245,7 +245,7 @@ function Hero() {
         <div className="fade-up mt-12 flex flex-col items-center gap-4">
           <PrimaryCTA>Quero comer sem culpa</PrimaryCTA>
           <p className="text-center text-[12.5px] text-muted-foreground">
-            Acesso imediato • Garantia de 7 dias
+            Acesso imediato · Garantia de 7 dias
             <br />
             Menos que um delivery para transformar sua relação com a comida.
           </p>
@@ -482,7 +482,7 @@ function ParaQuem() {
   ];
 
   return (
-    <section className="section-light hairline-t py-28 md:py-36">
+    <section className="section-dark hairline-t py-28 md:py-36">
       <Container>
         <h2 className="display mx-auto max-w-[820px] text-center text-[34px] md:text-[52px]">
           O Prato Flexível é para quem quer comer melhor sem transformar comida em cobrança.
@@ -679,6 +679,13 @@ function Bonus() {
                 <div className="hairline-t mt-6 pt-4 font-mono text-[13px] text-foreground">
                   Valor de mercado: {b.v}
                 </div>
+                <a
+                  href="#oferta"
+                  className="group mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--fresh)] px-5 py-3 text-[14px] font-medium text-white transition-all duration-300 hover:-translate-y-[1px] hover:shadow-[0_16px_40px_-16px_rgba(0,0,0,0.35)]"
+                >
+                  <span>Quero esse bônus</span>
+                  <ArrowRight className="size-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+                </a>
               </div>
             </article>
           ))}
@@ -694,7 +701,7 @@ function Bonus() {
 
 function Criador() {
   return (
-    <section className="section-dark hairline-t relative overflow-hidden py-28 md:py-36">
+    <section className="section-light hairline-t relative overflow-hidden py-28 md:py-36">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">
@@ -1107,14 +1114,12 @@ function Landing() {
       <Hero />
       <AnatomiaPrato />
       <Dor />
-
       <CTAMid />
       <Metodo />
-      <ParaQuem />
+      <Criador />
       <Entregaveis />
       <Bonus />
-
-      <Criador />
+      <ParaQuem />
       <Suporte />
       <Garantia />
       <Oferta />
