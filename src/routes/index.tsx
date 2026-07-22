@@ -431,7 +431,7 @@ function Metodo() {
             O método
           </p>
           <h2 className="display text-[34px] md:text-[54px]">
-            Depois que você aprende esse método, montar refeições equilibradas deixa de ser uma dúvida
+            Depois que você aprende, montar o prato para de ser um momento de ansiedade.
           </h2>
           <p className="mt-6 text-[16px] leading-relaxed text-muted-foreground">
           Você não vai depender de cardápios prontos nem de dietas engessadas. 
