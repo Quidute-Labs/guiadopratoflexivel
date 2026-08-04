@@ -7,12 +7,16 @@ import {
   X,
   ShieldCheck,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   BookOpen,
   Clock,
   Sprout,
   Coffee,
+  Lock,
 } from "lucide-react";
 import { motion, useScroll, useTransform } from "motion/react";
+import { cn } from "@/lib/utils";
 
 import logoMark from "@/assets/gpf-logo.png";
 import hero from "@/assets/gpf-hero.jpg";
@@ -23,6 +27,10 @@ import bonus02 from "@/assets/bonus-2-capa.png";
 import bonus03 from "@/assets/bonus-3-capa.png";
 import creator from "@/assets/calebe-clayton.jpg";
 import garantiaImg from "@/assets/gpf-garantia.png";
+import degustacaoPagina4 from "@/assets/degustacao-pagina-4.png";
+import degustacaoPagina5 from "@/assets/degustacao-pagina-5.png";
+import degustacaoPagina6 from "@/assets/degustacao-pagina-6.png";
+import degustacaoPagina7 from "@/assets/degustacao-pagina-7.png";
 
 
 import foodBroccoli from "@/assets/food-broccoli.png";
@@ -579,7 +587,11 @@ function Entregaveis() {
             <h3 className="display text-[26px] text-white md:text-[34px]">
               Guia do Prato Flexível
             </h3>
-            <p className="mt-3 text-[15px] text-white/75">
+            <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-[12px] font-medium text-white/90 ring-1 ring-white/15">
+              <BookOpen className="size-3.5 text-[var(--ember)]" strokeWidth={2} />
+              <span>+40 páginas de conteúdo prático</span>
+            </div>
+            <p className="mt-4 text-[15px] text-white/75">
               E-book completo para aprender a montar refeições equilibradas com
               alimentos comuns, entender o básico da nutrição e aplicar
               escolhas melhores na rotina real.
@@ -608,6 +620,106 @@ function Entregaveis() {
                 Conteúdo baseado nas orientações oficiais do Guia Alimentar para a População Brasileira (Ministério da Saúde) — sem terrorismo nutricional, sem dieta da moda.
               </span>
             </div>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
+
+/* ---------- degustação ---------- */
+
+const degustacaoPages = [
+  { n: 4, img: degustacaoPagina4 },
+  { n: 5, img: degustacaoPagina5 },
+  { n: 6, img: degustacaoPagina6 },
+  { n: 7, img: degustacaoPagina7 },
+];
+
+function Degustacao() {
+  const [index, setIndex] = useState(0);
+  const isLast = index === degustacaoPages.length - 1;
+  const page = degustacaoPages[index];
+
+  return (
+    <section className="section-light hairline-t py-28 md:py-36">
+      <Container>
+        <div className="mx-auto max-w-[720px] text-center">
+          <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.24em] text-[var(--ember)]">
+            Dá uma olhada por dentro
+          </p>
+          <h2 className="display text-[34px] md:text-[52px]">
+            Página por página, um guia feito pra caber na sua vida real.
+          </h2>
+          <p className="mx-auto mt-6 max-w-[560px] text-[16px] leading-relaxed text-muted-foreground">
+            Veja páginas reais do Guia do Prato Flexível antes de decidir.
+          </p>
+        </div>
+
+        <div className="relative mx-auto mt-14 max-w-[380px]">
+          <div className="relative aspect-[2/3] overflow-hidden rounded-3xl bg-card shadow-float ring-1 ring-hairline">
+            <img
+              src={page.img}
+              alt={`Página ${page.n} do Guia do Prato Flexível`}
+              width={1024}
+              height={1536}
+              loading="lazy"
+              className={cn(
+                "h-full w-full select-none object-cover transition-all duration-500",
+                isLast && "scale-105 blur-md brightness-[0.55]",
+              )}
+            />
+
+            {isLast && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 p-8 text-center">
+                <div className="flex size-12 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25">
+                  <Lock className="size-5 text-white" strokeWidth={1.75} />
+                </div>
+                <p className="display text-[20px] leading-tight text-white md:text-[24px]">
+                  O guia continua — e são mais de 40 páginas pra explorar.
+                </p>
+                <PrimaryCTA>Quero acessar o guia completo</PrimaryCTA>
+              </div>
+            )}
+          </div>
+
+          <div className="mt-6 flex items-center justify-between">
+            <button
+              onClick={() => setIndex((i) => Math.max(0, i - 1))}
+              disabled={index === 0}
+              aria-label="Página anterior"
+              className="flex size-11 items-center justify-center rounded-full bg-surface-raised ring-1 ring-hairline shadow-float transition-colors hover:bg-ember hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-30"
+            >
+              <ChevronLeft className="size-5" />
+            </button>
+
+            <div className="flex flex-col items-center gap-2">
+              <div className="flex gap-1.5">
+                {degustacaoPages.map((p, i) => (
+                  <button
+                    key={p.n}
+                    onClick={() => setIndex(i)}
+                    aria-label={`Ir para a página ${p.n}`}
+                    className={cn(
+                      "h-1.5 rounded-full transition-all duration-300",
+                      i === index ? "w-5 bg-[var(--ember)]" : "w-1.5 bg-hairline",
+                    )}
+                  />
+                ))}
+              </div>
+              <span className="font-mono text-[11.5px] tracking-wide text-muted-foreground">
+                Página {page.n} de 40
+              </span>
+            </div>
+
+            <button
+              onClick={() => setIndex((i) => Math.min(degustacaoPages.length - 1, i + 1))}
+              disabled={isLast}
+              aria-label="Próxima página"
+              className="flex size-11 items-center justify-center rounded-full bg-surface-raised ring-1 ring-hairline shadow-float transition-colors hover:bg-ember hover:text-accent-foreground disabled:pointer-events-none disabled:opacity-30"
+            >
+              <ChevronRight className="size-5" />
+            </button>
           </div>
         </div>
       </Container>
@@ -1124,6 +1236,7 @@ function Landing() {
       <Metodo />
       <Criador />
       <Entregaveis />
+      <Degustacao />
       <Bonus />
       <ParaQuem />
       <Suporte />
