@@ -27,10 +27,10 @@ import bonus02 from "@/assets/bonus-2-capa.png";
 import bonus03 from "@/assets/bonus-3-capa.png";
 import creator from "@/assets/calebe-clayton.jpg";
 import garantiaImg from "@/assets/gpf-garantia.png";
-import degustacaoPagina4 from "@/assets/degustacao-pagina-4.png";
-import degustacaoPagina5 from "@/assets/degustacao-pagina-5.png";
-import degustacaoPagina6 from "@/assets/degustacao-pagina-6.png";
-import degustacaoPagina7 from "@/assets/degustacao-pagina-7.png";
+import degustacaoPagina4 from "@/assets/degustacao-pagina-4.webp";
+import degustacaoPagina5 from "@/assets/degustacao-pagina-5.webp";
+import degustacaoPagina6 from "@/assets/degustacao-pagina-6.webp";
+import degustacaoPagina7 from "@/assets/degustacao-pagina-7.webp";
 
 
 import foodBroccoli from "@/assets/food-broccoli.png";
