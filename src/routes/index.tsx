@@ -19,8 +19,12 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/utils";
 
 import logoMark from "@/assets/gpf-logo.webp";
-import hero from "@/assets/gpf-hero.jpg";
-import bowlTop from "@/assets/gpf-bowl-top.png";
+import hero480 from "@/assets/gpf-hero-480w.webp";
+import hero860 from "@/assets/gpf-hero-860w.webp";
+import hero1290 from "@/assets/gpf-hero-1290w.webp";
+import bowlTop340 from "@/assets/gpf-bowl-top-340w.webp";
+import bowlTop520 from "@/assets/gpf-bowl-top-520w.webp";
+import bowlTop1040 from "@/assets/gpf-bowl-top-1040w.webp";
 import ebook from "@/assets/capa-ebook.webp";
 import bonus01 from "@/assets/bonus-1-capa.webp";
 import bonus02 from "@/assets/bonus-2-capa.webp";
@@ -241,7 +245,9 @@ function Hero() {
         <div className="fade-up mt-14 md:mt-20">
           <div className="relative mx-auto aspect-video max-w-[860px] overflow-hidden rounded-3xl shadow-float">
             <img
-              src={hero}
+              src={hero860}
+              srcSet={`${hero480} 480w, ${hero860} 860w, ${hero1290} 1290w`}
+              sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(100vw - 80px), 860px"
               alt="Prato equilibrado com arroz, frango, brócolis e tomate"
               width={1600}
               height={900}
@@ -308,7 +314,9 @@ function AnatomiaPrato() {
             }}
           />
           <motion.img
-            src={bowlTop}
+            src={bowlTop520}
+            srcSet={`${bowlTop340} 340w, ${bowlTop520} 520w, ${bowlTop1040} 1040w`}
+            sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(100vw - 80px), 520px"
             alt="Prato com arroz, frango, brócolis, cenoura e tomate"
             width={1024}
             height={1024}
