@@ -37,11 +37,11 @@ import degustacaoPagina6 from "@/assets/degustacao-pagina-6.webp";
 import degustacaoPagina7 from "@/assets/degustacao-pagina-7.webp";
 
 
-import foodBroccoli from "@/assets/food-broccoli.png";
-import foodTomato from "@/assets/food-tomato.png";
-import foodBasil from "@/assets/food-basil.png";
-import foodLime from "@/assets/food-lime.png";
-import foodRice from "@/assets/food-rice.png";
+import foodBroccoli from "@/assets/food-broccoli.webp";
+import foodTomato from "@/assets/food-tomato.webp";
+import foodBasil from "@/assets/food-basil.webp";
+import foodLime from "@/assets/food-lime.webp";
+import foodRice from "@/assets/food-rice.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -116,6 +116,7 @@ type FloatItem = {
   depth?: number;
   rotate?: number;
   delay?: number;
+  eager?: boolean;
 };
 
 function FloatingFood({
@@ -154,15 +155,18 @@ function ParallaxFood({
     (item.rotate ?? 0) + 12 * depth,
   ]);
 
+  const reveal = item.eager
+    ? { animate: { opacity: 1, scale: 1 } }
+    : { whileInView: { opacity: 1, scale: 1 }, viewport: { once: true, margin: "-10%" } };
+
   return (
     <motion.img
       src={item.src}
       alt={item.alt}
-      loading="lazy"
+      loading={item.eager ? undefined : "lazy"}
       style={{ y, rotate }}
       initial={{ opacity: 0, scale: 0.85 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, margin: "-10%" }}
+      {...reveal}
       transition={{
         duration: 0.9,
         delay: item.delay ?? 0,
@@ -197,10 +201,10 @@ function Hero() {
       <FloatingFood
         containerRef={heroRef}
         items={[
-          { src: foodTomato, alt: "", className: "left-[3%] top-[18%] w-[90px] md:w-[130px]", depth: 0.6, rotate: -8 },
-          { src: foodBasil, alt: "", className: "right-[4%] top-[12%] w-[100px] md:w-[150px]", depth: 0.45, rotate: 14, delay: 0.1 },
-          { src: foodLime, alt: "", className: "right-[6%] bottom-[20%] w-[90px] md:w-[120px]", depth: 0.55, rotate: -18, delay: 0.05 },
-          { src: foodBroccoli, alt: "", className: "hidden md:block left-[10%] top-[55%] w-[110px]", depth: 0.35, rotate: -6, delay: 0.2 },
+          { src: foodTomato, alt: "", className: "left-[3%] top-[18%] w-[90px] md:w-[130px]", depth: 0.6, rotate: -8, eager: true },
+          { src: foodBasil, alt: "", className: "right-[4%] top-[12%] w-[100px] md:w-[150px]", depth: 0.45, rotate: 14, delay: 0.1, eager: true },
+          { src: foodLime, alt: "", className: "right-[6%] bottom-[20%] w-[90px] md:w-[120px]", depth: 0.55, rotate: -18, delay: 0.05, eager: true },
+          { src: foodBroccoli, alt: "", className: "hidden md:block left-[10%] top-[55%] w-[110px]", depth: 0.35, rotate: -6, delay: 0.2, eager: true },
         ]}
       />
 
