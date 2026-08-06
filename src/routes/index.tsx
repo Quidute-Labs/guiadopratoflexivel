@@ -1069,7 +1069,7 @@ function Oferta() {
                 </div>
                 <div className="flex flex-col items-start gap-4 md:items-end">
                   <a
-                    href="https://pay.hotmart.com/O106374795V"
+                    href="https://pay.hotmart.com/O106374795V?checkoutMode=10"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-3 rounded-full bg-[oklch(0.40_0.06_145)] px-7 py-4 text-[15px] font-semibold text-[#fbf5e6] transition-all duration-300 hover:-translate-y-[1px] hover:shadow-[0_18px_44px_-14px_rgba(0,0,0,0.45)]"
