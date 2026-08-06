@@ -26,7 +26,7 @@ import bonus01 from "@/assets/bonus-1-capa.webp";
 import bonus02 from "@/assets/bonus-2-capa.webp";
 import bonus03 from "@/assets/bonus-3-capa.webp";
 import creator from "@/assets/calebe-clayton.jpg";
-import garantiaImg from "@/assets/gpf-garantia.png";
+import garantiaImg from "@/assets/gpf-garantia.webp";
 import degustacaoPagina4 from "@/assets/degustacao-pagina-4.webp";
 import degustacaoPagina5 from "@/assets/degustacao-pagina-5.webp";
 import degustacaoPagina6 from "@/assets/degustacao-pagina-6.webp";
@@ -929,6 +929,7 @@ function Garantia() {
           <img
             src={garantiaImg}
             alt="7 dias de garantia"
+            loading="lazy"
             className="h-72 w-72 object-contain md:h-[420px] md:w-[420px]"
           />
 
