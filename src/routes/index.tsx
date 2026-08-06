@@ -18,7 +18,7 @@ import {
 import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/utils";
 
-import logoMark from "@/assets/gpf-logo.png";
+import logoMark from "@/assets/gpf-logo.webp";
 import hero from "@/assets/gpf-hero.jpg";
 import bowlTop from "@/assets/gpf-bowl-top.png";
 import ebook from "@/assets/capa-ebook.webp";
